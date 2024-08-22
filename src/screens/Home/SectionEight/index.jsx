@@ -1,5 +1,5 @@
 import Mobile from '../../../assets/mobile.png'
-import PlayStore from '../../../assets/PlayStore.png'
+import PlayStore from '../../../assets/Playstore.png'
 
 const Index = ()=>{
     return (
