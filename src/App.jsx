@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import Home from './screens/Home'
 import AboutUs from './screens/Aboutus'
-import ContactUs from './screens/Aboutus'
+import ContactUs from './screens/Contactus'
 import Faq from './screens/Aboutus'
 import Blog from './screens/Aboutus'
 import MainApp from './screens/MainApp'

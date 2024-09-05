@@ -7,7 +7,16 @@ import Twitter from '../../../assets/twitter.png'
 import Instagram from '../../../assets/instagram.png'
 import LinkedIn from '../../../assets/linkedin.png'
 import Whatsapp from '../../../assets/whatsapp.png'
+import { Button, Form, Input } from 'antd'
 const Index = ()=>{
+    const [form] = Form.useForm();
+
+    const onFinish = (value)=>{
+        // form.validateFields((value)=>{
+        //     console.log(value);
+        // })
+    }
+
     return (
         <div className="w-full h-[120vh] bg-grayscale flex justify-center">
             <div className="w-3/4 h-full mt-12">
@@ -66,7 +75,83 @@ const Index = ()=>{
                       
                             
                     </div>
-                    <div className="flex-1"></div>
+                    <div className="flex-1 p-10 ">
+                        
+                        <div className='mt-1 w-full'>
+                            <Form
+                                name="contact"
+                                layout={"vertical"}
+                                form={form}
+                                scrollToFirstError={true}
+                                onFinish={onFinish}>
+                                <div className='flex gap-3 mb-4'>
+                                        <Form.Item name="first_name"  rules={[{
+                                                required: true,
+                                                message: "Provide First Name"
+                                            }]} className="w-full">
+
+                                                <Input className='p-2 rounded-xl' placeholder='First name'/>
+                                            
+                                        </Form.Item> 
+
+                                        <Form.Item name="last_name"  rules={[{
+                                                required: true,
+                                                message: "Provide Last Name"
+                                            }]} className="w-full">
+
+                                                <Input className='p-2 rounded-xl' placeholder='Last name'/>
+                                        
+                                        </Form.Item> 
+                                </div>
+                                <div className='flex gap-3 mb-4'>
+                                        <Form.Item name="first_name"  rules={[{
+                                                required: true,
+                                                message: "Provide Email"
+                                            }]} className="w-full">
+
+                                                <Input className='p-2 rounded-xl text-black'  placeholder='Email Address'/>
+                                            
+                                        </Form.Item> 
+
+                                        <Form.Item name="last_name"  rules={[{
+                                                required: true,
+                                                message: "Provide Phonenumber"
+                                            }]} className="w-full">
+
+                                                <Input className='p-2 rounded-xl' placeholder='Phone number'/>
+                                        
+                                        </Form.Item> 
+                                </div>
+                                <div className='w-full mb-4'>
+                                    <Form.Item name="last_name"  rules={[{
+                                                required: true,
+                                                message: "Provide Subject"
+                                            }]} className="w-full">
+
+                                                <Input className='p-2 rounded-xl' placeholder='Subject'/>
+                                        
+                                    </Form.Item> 
+                                </div>
+
+                                <div className='w-full mb-4'>
+                                    <Form.Item name="message"  rules={[{
+                                                required: true,
+                                                message: "Write message "
+                                            }]} className="w-full">
+
+                                                <Input.TextArea className='p-2 rounded-xl' rows={4} placeholder='Write Message'/>
+                                        
+                                    </Form.Item> 
+                                </div>
+
+                                <div className='w-full'>
+                                    <Button className='bg-primaryColor text-white' htmlType="submit">Submit</Button>
+                                </div>
+
+                            </Form>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
