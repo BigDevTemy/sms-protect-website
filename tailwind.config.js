@@ -24,7 +24,10 @@ export default {
         gradientGreen:'#0D3D39',
         grayscale:'#F0F3F6',
         purple: '#6133C6',
-        darkPurple:'#140D22'
+        darkPurple:'#140D22',
+        secondaryColor:'#EB942E',
+        deepGray:'#DFE5EB'
+
 
 
 

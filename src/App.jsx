@@ -11,7 +11,7 @@ import Home from './screens/Home'
 import AboutUs from './screens/Aboutus'
 import ContactUs from './screens/Contactus'
 import Faq from './screens/Aboutus'
-import Blog from './screens/Aboutus'
+import Blog from './screens/Blog'
 import MainApp from './screens/MainApp'
 function App() {
   const [count, setCount] = useState(0)

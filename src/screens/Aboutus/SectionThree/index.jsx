@@ -139,7 +139,7 @@ const Index = ()=>{
                                                 message: "Write message "
                                             }]} className="w-full">
 
-                                                <Input.TextArea className='p-2 rounded-xl' rows={4} placeholder='Write Message'/>
+                                                <Input.TextArea className='p-2 rounded-xl' rows={8} placeholder='Write Message'/>
                                         
                                     </Form.Item> 
                                 </div>
